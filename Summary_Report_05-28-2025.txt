@@ -1,0 +1,18 @@
+SUMMARY REPORT FOR ACCOUNTS PAYABLE
+===================================
+
+Provider: Dr. Sarah Wilson
+Provider Number: 111222333
+Consultations: 4
+Fee: $325.00
+
+Provider: Dr. Mike Brown
+Provider Number: 444555666
+Consultations: 3
+Fee: $150.00
+
+TOTALS:
+-------
+Total Providers: 2
+Total Consultations: 7
+Total Fees: $475.00

@@ -1,0 +1,40 @@
+PROVIDER SERVICES REPORT
+========================
+
+Provider Name: Dr. Sarah Wilson
+Provider Number: 111222333
+Street Address: 100 Medical Dr
+City: Springfield
+State: IL
+Zip Code: 62705
+
+Services Provided:
+------------------
+Date of Service: 03-15-2025
+Date and Time Received: 05-25-2025 00:30:40
+Member Name: John Doe
+Member Number: 123456789
+Service Code: 598470
+Fee: $75.00
+Comments: Initial consultation
+
+Date of Service: 03-17-2025
+Date and Time Received: 05-25-2025 00:30:40
+Member Name: John Doe
+Member Number: 123456789
+Service Code: 123456
+Fee: $100.00
+Comments: Follow-up consultation
+
+Date of Service: 03-18-2025
+Date and Time Received: 05-25-2025 00:30:40
+Member Name: Bob Johnson
+Member Number: 555666777
+Service Code: 598470
+Fee: $75.00
+Comments: Diet planning session
+
+SUMMARY:
+--------
+Total Consultations: 3
+Total Fee: $250.00

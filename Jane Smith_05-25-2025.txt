@@ -1,0 +1,20 @@
+MEMBER SERVICES REPORT
+======================
+
+Member Name: Jane Smith
+Member Number: 987654321
+Street Address: 456 Oak Ave
+City: Springfield
+State: IL
+Zip Code: 62701
+
+Services Provided:
+------------------
+Date of Service: 03-16-2025
+Provider Name: Dr. Mike Brown
+Service Name: Aerobics Session
+
+Date of Service: 03-19-2025
+Provider Name: Dr. Mike Brown
+Service Name: Aerobics Session
+

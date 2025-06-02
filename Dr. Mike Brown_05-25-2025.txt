@@ -1,0 +1,32 @@
+PROVIDER SERVICES REPORT
+========================
+
+Provider Name: Dr. Mike Brown
+Provider Number: 444555666
+Street Address: 200 Health St
+City: Springfield
+State: IL
+Zip Code: 62706
+
+Services Provided:
+------------------
+Date of Service: 03-16-2025
+Date and Time Received: 05-25-2025 00:30:40
+Member Name: Jane Smith
+Member Number: 987654321
+Service Code: 883948
+Fee: $50.00
+Comments: First aerobics session
+
+Date of Service: 03-19-2025
+Date and Time Received: 05-25-2025 00:30:40
+Member Name: Jane Smith
+Member Number: 987654321
+Service Code: 883948
+Fee: $50.00
+Comments: Second aerobics session
+
+SUMMARY:
+--------
+Total Consultations: 2
+Total Fee: $100.00

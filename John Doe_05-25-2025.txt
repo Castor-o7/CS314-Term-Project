@@ -1,0 +1,20 @@
+MEMBER SERVICES REPORT
+======================
+
+Member Name: John Doe
+Member Number: 123456789
+Street Address: 123 Main St
+City: Springfield
+State: IL
+Zip Code: 62704
+
+Services Provided:
+------------------
+Date of Service: 03-15-2025
+Provider Name: Dr. Sarah Wilson
+Service Name: Dietitian Session
+
+Date of Service: 03-17-2025
+Provider Name: Dr. Sarah Wilson
+Service Name: Consultation
+

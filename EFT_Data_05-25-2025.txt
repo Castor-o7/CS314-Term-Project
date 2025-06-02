@@ -1,0 +1,5 @@
+ELECTRONIC FUNDS TRANSFER (EFT) DATA
+====================================
+
+Dr. Sarah Wilson,111222333,250.00
+Dr. Mike Brown,444555666,100.00

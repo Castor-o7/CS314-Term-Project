@@ -1,0 +1,8 @@
+PROVIDER DIRECTORY
+==================
+
+Service Name                 | Service Code | Fee
+-----------------------------------------------
+Aerobics Session             | 883948       | $50.00
+Consultation                 | 123456       | $100.00
+Dietitian Session            | 598470       | $75.00

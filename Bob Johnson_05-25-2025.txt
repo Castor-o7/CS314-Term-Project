@@ -1,0 +1,16 @@
+MEMBER SERVICES REPORT
+======================
+
+Member Name: Bob Johnson
+Member Number: 555666777
+Street Address: 789 Pine St
+City: Springfield
+State: IL
+Zip Code: 62702
+
+Services Provided:
+------------------
+Date of Service: 03-18-2025
+Provider Name: Dr. Sarah Wilson
+Service Name: Dietitian Session
+
