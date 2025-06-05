@@ -50,7 +50,7 @@ test_main.o: test_main.cpp Member.h Provider.h Service.h ReportGenerator.h
 
 test_reports.o: test_reports.cpp Member.h Provider.h Service.h ReportGenerator.h
 	$(CXX) $(CXXFLAGS) -c test_reports.cpp
-
+	
 ChocAn.o: ChocAn.cpp Member.h Provider.h Service.h ReportGenerator.h
 	$(CXX) $(CXXFLAGS) -c ChocAn.cpp
 

@@ -141,10 +141,10 @@ void ProviderTerminal::serviceBilling() {
     
     // Step 4: Service verification
     // In a real system, we would look up the service in our database
-    // For simulation, we'll use our test services
+    // For simulation, we'll use our test services that are hardcoded in the reportgenny. Is this a known issue?
     std::cout << "\nLooking up service..." << std::endl;
     
-    // For demo purposes, simulate service lookup
+    // For demo purposes, simulate service lookup. We love a good demo!!~
     std::string serviceName = "Unknown Service";
     double serviceFee = 0.0;
     
@@ -162,6 +162,7 @@ void ProviderTerminal::serviceBilling() {
         return;
     }
     
+    // confirm the service details with the provider with the current provideahhhh
     std::cout << "Service: " << serviceName << std::endl;
     std::cout << "Is this the correct service? (y/n): ";
     char confirmation;
@@ -173,7 +174,7 @@ void ProviderTerminal::serviceBilling() {
         return;
     }
     
-    // Step 5: Optional comments
+    // Step 5: Optional comments. GIMME DA COMMENTS MAN
     std::cout << "\nEnter comments (optional, max 100 characters): ";
     std::string comments;
     std::getline(std::cin, comments);
