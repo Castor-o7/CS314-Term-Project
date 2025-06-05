@@ -10,7 +10,7 @@ TEST_MAIN_OBJS = $(OBJS) test_main.o
 TEST_REPORTS_OBJS = $(OBJS) test_reports.o
 MAIN_OBJS = $(TERMINAL_OBJS) ChocAnMain.o
 GOOGLE_TEST = googletest/googletest/src/gtest-all.cc
-CPPS = ManagerTerminal.cpp Provider.cpp ProviderTerminal.cpp reportGenerator.cpp Service.cpp member.cpp
+CPPS = ManagerTerminal.cpp Provider.cpp ProviderTerminal.cpp ReportGenerator.cpp Service.cpp Member.cpp
 
 # Executables
 all: test_main test_reports main unittests
@@ -69,4 +69,4 @@ run-test: test_main
 run-reports: test_reports
 	./test_reports
 
-.PHONY: all clean run-main run-test run-reports 
+.PHONY: all clean run-main run-test run-reports
