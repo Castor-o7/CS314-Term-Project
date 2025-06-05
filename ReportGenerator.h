@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include "googletest/googletest/include/gtest/gtest.h"
 
 // Structure to represent a service record
 struct ServiceRecord {
@@ -38,7 +39,7 @@ private:
     void writeToFile(const std::string& filename, const std::string& content) const;
     std::vector<ServiceRecord> getServicesForMember(const std::string& memberNumber) const;
     std::vector<ServiceRecord> getServicesForProvider(const std::string& providerNumber) const;
-    
+
 public:
     // Constructor
     ReportGenerator();

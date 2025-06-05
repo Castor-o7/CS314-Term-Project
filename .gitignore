@@ -2,4 +2,5 @@
 main
 test_main
 test_reports
+unittests
 *.dSYM

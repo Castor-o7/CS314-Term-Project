@@ -7,6 +7,7 @@
 #include "Service.h"
 #include <string>
 #include <iostream>
+#include "googletest/googletest/include/gtest/gtest.h"
 
 class ManagerTerminal {
 private:
@@ -43,6 +44,20 @@ private:
     bool validateProviderNumber(const std::string& number);
     bool validateState(const std::string& state);
     bool validateZipCode(const std::string& zipCode);
+
+    // testing methods
+    FRIEND_TEST(validateMemberNumber, notEnoughDigits);
+    FRIEND_TEST(validateMemberNumber, enoughDigits);
+    FRIEND_TEST(validateProviderNumber, notEnoughDigits);
+    FRIEND_TEST(validateProviderNumber, enoughDigits);
+    FRIEND_TEST(validateState, numberInput);
+    FRIEND_TEST(validateState, tooLong);
+    FRIEND_TEST(validateState, properInput);
+    FRIEND_TEST(validateZipCode, tooShort);
+    FRIEND_TEST(validateZipCode, tooLong);
+    FRIEND_TEST(validateZipCode, justRight);
+    FRIEND_TEST(validateZipCode, isAlpha);
+
     
 public:
     // Constructor
