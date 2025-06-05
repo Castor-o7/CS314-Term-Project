@@ -1,7 +1,7 @@
 # Makefile for ChocAn Project
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++11 -g
+CXXFLAGS = -Wall -Wextra -std=c++17 -g
 
 # Object files
 OBJS = Member.o Provider.o Service.o ReportGenerator.o
@@ -9,9 +9,13 @@ TERMINAL_OBJS = $(OBJS) ProviderTerminal.o ManagerTerminal.o
 TEST_MAIN_OBJS = $(OBJS) test_main.o
 TEST_REPORTS_OBJS = $(OBJS) test_reports.o
 MAIN_OBJS = $(TERMINAL_OBJS) ChocAnMain.o
+GOOGLE_TEST = googletest/googletest/src/gtest-all.cc
 
 # Executables
-all: test_main test_reports main
+all: test_main test_reports main unittests
+
+unittests: unit_tests.cpp
+	$(CXX) $(CXXFLAGS) $(<) $(GOOGLE_TEST) -o unittests
 
 test_main: $(TEST_MAIN_OBJS)
 	$(CXX) $(CXXFLAGS) -o test_main $(TEST_MAIN_OBJS)
@@ -52,7 +56,7 @@ ChocAnMain.o: ChocAnMain.cpp ProviderTerminal.h ManagerTerminal.h ReportGenerato
 
 # Clean rule
 clean:
-	rm -f *.o test_main test_reports main
+	rm -f *.o test_main test_reports main unittests
 
 # Run targets
 run-main: main
