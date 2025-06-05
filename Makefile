@@ -8,20 +8,16 @@ OBJS = Member.o Provider.o Service.o ReportGenerator.o
 TERMINAL_OBJS = $(OBJS) ProviderTerminal.o ManagerTerminal.o
 TEST_MAIN_OBJS = $(OBJS) test_main.o
 TEST_REPORTS_OBJS = $(OBJS) test_reports.o
-CHOCAN_OBJS = $(OBJS) ChocAn.o
 MAIN_OBJS = $(TERMINAL_OBJS) ChocAnMain.o
 
 # Executables
-all: test_main test_reports chocan main
+all: test_main test_reports main
 
 test_main: $(TEST_MAIN_OBJS)
 	$(CXX) $(CXXFLAGS) -o test_main $(TEST_MAIN_OBJS)
 
 test_reports: $(TEST_REPORTS_OBJS)
 	$(CXX) $(CXXFLAGS) -o test_reports $(TEST_REPORTS_OBJS)
-
-chocan: $(CHOCAN_OBJS)
-	$(CXX) $(CXXFLAGS) -o chocan $(CHOCAN_OBJS)
 
 main: $(MAIN_OBJS)
 	$(CXX) $(CXXFLAGS) -o main $(MAIN_OBJS)
@@ -50,16 +46,13 @@ test_main.o: test_main.cpp Member.h Provider.h Service.h ReportGenerator.h
 
 test_reports.o: test_reports.cpp Member.h Provider.h Service.h ReportGenerator.h
 	$(CXX) $(CXXFLAGS) -c test_reports.cpp
-	
-ChocAn.o: ChocAn.cpp Member.h Provider.h Service.h ReportGenerator.h
-	$(CXX) $(CXXFLAGS) -c ChocAn.cpp
 
 ChocAnMain.o: ChocAnMain.cpp ProviderTerminal.h ManagerTerminal.h ReportGenerator.h
 	$(CXX) $(CXXFLAGS) -c ChocAnMain.cpp
 
 # Clean rule
 clean:
-	rm -f *.o test_main test_reports chocan main
+	rm -f *.o test_main test_reports main
 
 # Run targets
 run-main: main
@@ -71,7 +64,4 @@ run-test: test_main
 run-reports: test_reports
 	./test_reports
 
-run-chocan: chocan
-	./chocan
-
-.PHONY: all clean run-main run-test run-reports run-chocan
+.PHONY: all clean run-main run-test run-reports 
