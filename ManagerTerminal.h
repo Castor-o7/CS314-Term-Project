@@ -7,7 +7,7 @@
 #include "Service.h"
 #include <string>
 #include <iostream>
-#include "googletest/googletest/include/gtest/gtest.h"
+#include "googletest/include/gtest/gtest.h"
 
 class ManagerTerminal {
 private:

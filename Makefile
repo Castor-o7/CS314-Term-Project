@@ -9,7 +9,7 @@ TERMINAL_OBJS = $(OBJS) ProviderTerminal.o ManagerTerminal.o
 TEST_MAIN_OBJS = $(OBJS) test_main.o
 TEST_REPORTS_OBJS = $(OBJS) test_reports.o
 MAIN_OBJS = $(TERMINAL_OBJS) ChocAnMain.o
-GOOGLE_TEST = googletest/googletest/src/gtest-all.cc
+GOOGLE_TEST = googletest/src/gtest-all.cc
 CPPS = ManagerTerminal.cpp Provider.cpp ProviderTerminal.cpp ReportGenerator.cpp Service.cpp Member.cpp
 
 # Executables

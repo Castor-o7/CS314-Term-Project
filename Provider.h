@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "googletest/googletest/include/gtest/gtest.h"
+#include "googletest/include/gtest/gtest.h"
 
 class Provider {
 private:

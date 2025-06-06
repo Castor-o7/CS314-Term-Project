@@ -1,4 +1,4 @@
-#include "googletest/googletest/include/gtest/gtest.h"
+#include "googletest/include/gtest/gtest.h"
 #include "ManagerTerminal.h"
 #include "ReportGenerator.h"
 #include "Service.h"
