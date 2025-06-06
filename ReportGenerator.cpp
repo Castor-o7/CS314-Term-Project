@@ -373,7 +373,7 @@ void ReportGenerator::generateProviderDirectory() const {
         sortedServices.push_back({pair.first, pair.second});
     }
     
-    // Sort alphabetically by service name
+    //sort alphabetically by service name. lambda function to compare Service objects is nuts yo. functional programming so cool
     std::sort(sortedServices.begin(), sortedServices.end(),
               [](const std::pair<std::string, Service>& a, const std::pair<std::string, Service>& b) {
                   return a.second.getName() < b.second.getName();
@@ -395,7 +395,7 @@ void ReportGenerator::generateProviderDirectory() const {
     writeToFile("Provider_Directory.txt", report.str());
 }
 
-// Generate all weekly reports
+// Generate all weekly reports. This method is the main entry point for generating reports, big time
 void ReportGenerator::generateWeeklyReports() const {
     std::cout << "Generating weekly reports...\n" << std::endl;
     

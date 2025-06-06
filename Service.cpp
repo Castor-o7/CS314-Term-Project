@@ -6,7 +6,6 @@
 
 // Default constructor
 Service::Service() : code(""), name(""), fee(0.0) {
-    // Empty default constructor for map compatibility
 }
 
 // Validation helper methods
@@ -39,7 +38,7 @@ void Service::setFee(double newFee) {
     fee = newFee;
 }
 
-// File I/O
+// Filesystem innies and outies
 void Service::saveToFile(const std::string& filename) const {
     std::ofstream ofs(filename, std::ios::app);
     ofs << code << ',' << name << ',' << fee << '\n';
@@ -58,7 +57,7 @@ std::vector<Service> Service::loadFromFile(const std::string& filename) {
         double fee = std::stod(feeStr);
         try {
             services.emplace_back(code, name, fee);
-        } catch (...) { /* skip invalid lines */ }
+        } catch (...) { /* skip invalid lines, yo */ }
     }
     return services;
 }

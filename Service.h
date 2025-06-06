@@ -30,7 +30,7 @@ public:
     std::string getName() const { return name; }
     double getFee() const { return fee; }
 
-    // File I/O
+    // Filesyste, I/O
     void saveToFile(const std::string& filename) const;
     static std::vector<Service> loadFromFile(const std::string& filename);
 };
